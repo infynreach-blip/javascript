@@ -1,0 +1,45 @@
+<p id="demo"></p>
+<p id="operators"></p>
+<p id="function"></p>
+<p id="operate"></p>
+<p id="arithmetic"></p>
+<p id="value"></p>
+<p id="dm"></p>
+<p id="datatype"></p>
+<p id="boolean"></p>
+<p id="object"></p>
+<button type="button" onclick="myfunction()">Click</button>
+
+<script>
+    let q;
+    q = 13;
+
+    document.getElementById("demo").innerHTML = "The number is" + q;
+
+    let x = 10;
+    let y = 20;
+    document.getElementById("operators").innerHTML = "The number is" + x / y + y;
+
+    function myfunction(){
+        document.getElementById("function").innerHTML = "My name is dinesh";
+    }
+    document.getElementById("operate").innerHTML = "5" + 5 + 6;
+    document.getElementById("arithmetic").innerHTML = 5 + 5 + "6";
+    document.getElementById("value").innerHTML = 5 + "5" + 6;
+
+    const dm = ["seo", "social media", "affiliate"]
+    dm[2] = "sem";
+    document.getElementById("dm").innerHTML = dm;
+
+    let w = "data";
+    document.getElementById("datatype").innerHTML = typeof(w);
+
+    let e = 5;
+    
+    document.getElementById("boolean").innerHTML = e < 4 ;
+
+    const myDetails = {fName: "dinesh", age: 23, job: "dm"}
+
+    document.getElementById("object").innerHTML = "my age is" + myDetails.age;
+
+</script>
